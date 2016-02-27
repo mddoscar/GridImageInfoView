@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="InfoMenuItemView" id="L1o-Us-yOL" customClass="InfoMenuItemView">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqx-Zt-bNO">
+                    <rect key="frame" x="2" y="2" width="46" height="46"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtJ-Z6-MKX">
+                            <rect key="frame" x="0.0" y="28" width="50" height="20"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ge6-8r-AC6" customClass="InfoImageView">
+                            <rect key="frame" x="11" y="2" width="25" height="25"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="1x1-BB-yGi"/>
+                                <constraint firstAttribute="width" constant="25" id="DjP-BB-AYV"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ge6-8r-AC6" firstAttribute="top" secondItem="uqx-Zt-bNO" secondAttribute="top" constant="2" id="14x-Ap-1kT"/>
+                        <constraint firstItem="DtJ-Z6-MKX" firstAttribute="leading" secondItem="uqx-Zt-bNO" secondAttribute="leading" id="GoS-tg-FXq"/>
+                        <constraint firstAttribute="bottom" secondItem="DtJ-Z6-MKX" secondAttribute="bottom" constant="-2" id="HDb-DD-0o6"/>
+                        <constraint firstAttribute="trailing" secondItem="DtJ-Z6-MKX" secondAttribute="trailing" constant="-4" id="HdC-Hl-8bq"/>
+                        <constraint firstItem="DtJ-Z6-MKX" firstAttribute="top" secondItem="ge6-8r-AC6" secondAttribute="bottom" constant="1" id="YLk-60-B4z"/>
+                        <constraint firstItem="ge6-8r-AC6" firstAttribute="centerX" secondItem="uqx-Zt-bNO" secondAttribute="centerX" id="uRW-py-c1F"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sa1-En-1ME" customClass="InfoImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <animations/>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uqx-Zt-bNO" firstAttribute="leading" secondItem="L1o-Us-yOL" secondAttribute="leading" constant="2" id="9Fh-8C-Xmw"/>
+                <constraint firstItem="uqx-Zt-bNO" firstAttribute="top" secondItem="L1o-Us-yOL" secondAttribute="top" constant="2" id="QkD-oc-Mrn"/>
+                <constraint firstItem="sa1-En-1ME" firstAttribute="height" secondItem="L1o-Us-yOL" secondAttribute="height" id="UNN-Ac-AE3"/>
+                <constraint firstAttribute="trailing" secondItem="uqx-Zt-bNO" secondAttribute="trailing" constant="2" id="YCi-fk-Rg4"/>
+                <constraint firstAttribute="bottom" secondItem="uqx-Zt-bNO" secondAttribute="bottom" constant="2" id="fQY-iE-q46"/>
+                <constraint firstItem="sa1-En-1ME" firstAttribute="width" secondItem="L1o-Us-yOL" secondAttribute="width" id="iRJ-G2-73U"/>
+                <constraint firstItem="sa1-En-1ME" firstAttribute="centerY" secondItem="L1o-Us-yOL" secondAttribute="centerY" id="wpj-Oc-Ztf"/>
+                <constraint firstItem="sa1-En-1ME" firstAttribute="centerX" secondItem="L1o-Us-yOL" secondAttribute="centerX" id="wus-Gw-7E8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="icon" destination="ge6-8r-AC6" id="RbP-1X-nIM"/>
+                <outlet property="mask" destination="sa1-En-1ME" id="YzZ-nC-MvU"/>
+                <outlet property="text" destination="DtJ-Z6-MKX" id="g03-YL-meH"/>
+            </connections>
+        </view>
+    </objects>
+</document>
